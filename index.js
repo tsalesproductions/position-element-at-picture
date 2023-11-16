@@ -31,6 +31,11 @@ class editor{
         $("#container").prepend(`<img id="backgroundImage" src="${target.value}" alt="Background Image">`);
       }
 
+      const imageWidth = $("#backgroundImage").width(),
+            imageHeight = $("#backgroundImage").height();
+
+      $("#container").attr('style', `width: ${widthImage}px; height: ${imageHeight}px`);
+
       $(".editor .section.elements").show();
 
       this.image = target.value;
