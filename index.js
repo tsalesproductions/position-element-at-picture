@@ -34,7 +34,7 @@ class editor{
       const imageWidth = $("#backgroundImage").width(),
             imageHeight = $("#backgroundImage").height();
 
-      $("#container").attr('style', `width: ${widthImage}px; height: ${imageHeight}px`);
+      $("#container").attr('style', `width: ${imageWidth}px; height: ${imageHeight}px`);
 
       $(".editor .section.elements").show();
 
