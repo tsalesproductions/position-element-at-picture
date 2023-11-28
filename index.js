@@ -31,10 +31,12 @@ class editor{
         $("#container").prepend(`<img id="backgroundImage" src="${target.value}" alt="Background Image">`);
       }
 
-      const imageWidth = $("#backgroundImage").width(),
+      setTimeout(()=> {
+        const imageWidth = $("#backgroundImage").width(),
             imageHeight = $("#backgroundImage").height();
 
-      $("#container").attr('style', `width: ${imageWidth}px; height: ${imageHeight}px`);
+        $("#container").attr('style', `width: ${imageWidth}px; height: ${imageHeight}px`);
+      }, 500)
 
       $(".editor .section.elements").show();
 
